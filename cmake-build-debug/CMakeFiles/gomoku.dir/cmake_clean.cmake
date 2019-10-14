@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gomoku.dir/main.cpp.o"
+  "CMakeFiles/gomoku.dir/classes/Logger.cpp.o"
   "gomoku.pdb"
   "gomoku"
 )

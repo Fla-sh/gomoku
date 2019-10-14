@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/piotr/Documents/cpp/gomoku/classes/Logger.cpp">
+			<Option target="gomoku"/>
+		</Unit>
+		<Unit filename="/home/piotr/Documents/cpp/gomoku/headers/Logger.h">
+			<Option target="gomoku"/>
+		</Unit>
 		<Unit filename="/home/piotr/Documents/cpp/gomoku/main.cpp">
 			<Option target="gomoku"/>
 		</Unit>

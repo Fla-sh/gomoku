@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/piotr/Documents/cpp/gomoku/classes/Logger.cpp" "/home/piotr/Documents/cpp/gomoku/cmake-build-debug/CMakeFiles/gomoku.dir/classes/Logger.cpp.o"
   "/home/piotr/Documents/cpp/gomoku/main.cpp" "/home/piotr/Documents/cpp/gomoku/cmake-build-debug/CMakeFiles/gomoku.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

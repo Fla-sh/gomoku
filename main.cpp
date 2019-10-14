@@ -1,6 +1,8 @@
 #include <iostream>
+#include "headers/Gomoku.h"
+#include "classes/Gomoku.cpp"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Gomoku gomoku;
     return 0;
 }

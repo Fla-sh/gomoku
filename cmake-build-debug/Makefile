@@ -123,6 +123,33 @@ gomoku/fast:
 	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/build
 .PHONY : gomoku/fast
 
+classes/Logger.o: classes/Logger.cpp.o
+
+.PHONY : classes/Logger.o
+
+# target to build an object file
+classes/Logger.cpp.o:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/Logger.cpp.o
+.PHONY : classes/Logger.cpp.o
+
+classes/Logger.i: classes/Logger.cpp.i
+
+.PHONY : classes/Logger.i
+
+# target to preprocess a source file
+classes/Logger.cpp.i:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/Logger.cpp.i
+.PHONY : classes/Logger.cpp.i
+
+classes/Logger.s: classes/Logger.cpp.s
+
+.PHONY : classes/Logger.s
+
+# target to generate assembly for a file
+classes/Logger.cpp.s:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/Logger.cpp.s
+.PHONY : classes/Logger.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... gomoku"
+	@echo "... classes/Logger.o"
+	@echo "... classes/Logger.i"
+	@echo "... classes/Logger.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

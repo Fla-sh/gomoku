@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/piotr/Documents/cpp/gomoku/classes/Logger.cpp
+../headers/Logger.h
+/home/piotr/Documents/cpp/gomoku/headers/Logger.h
+ctime
+-
+iostream
+-
+
+/home/piotr/Documents/cpp/gomoku/headers/Logger.h
+string
+-
+fstream
+-
+
