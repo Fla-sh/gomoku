@@ -1,0 +1,3 @@
+/home/piotr/Documents/cpp/gomoku/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/piotr/Documents/cpp/gomoku/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/piotr/Documents/cpp/gomoku/cmake-build-debug/CMakeFiles/gomoku.dir
