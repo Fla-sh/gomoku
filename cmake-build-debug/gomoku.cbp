@@ -84,10 +84,40 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/piotr/Documents/cpp/gomoku/classes/Board.cpp">
+			<Option target="gomoku"/>
+		</Unit>
+		<Unit filename="/home/piotr/Documents/cpp/gomoku/classes/Drawer.cpp">
+			<Option target="gomoku"/>
+		</Unit>
+		<Unit filename="/home/piotr/Documents/cpp/gomoku/classes/DrawerClassic.cpp">
+			<Option target="gomoku"/>
+		</Unit>
+		<Unit filename="/home/piotr/Documents/cpp/gomoku/classes/GameLoop.cpp">
+			<Option target="gomoku"/>
+		</Unit>
 		<Unit filename="/home/piotr/Documents/cpp/gomoku/classes/Logger.cpp">
 			<Option target="gomoku"/>
 		</Unit>
+		<Unit filename="/home/piotr/Documents/cpp/gomoku/classes/MainMenu.cpp">
+			<Option target="gomoku"/>
+		</Unit>
+		<Unit filename="/home/piotr/Documents/cpp/gomoku/headers/Board.h">
+			<Option target="gomoku"/>
+		</Unit>
+		<Unit filename="/home/piotr/Documents/cpp/gomoku/headers/Drawer.h">
+			<Option target="gomoku"/>
+		</Unit>
+		<Unit filename="/home/piotr/Documents/cpp/gomoku/headers/DrawerClassic.h">
+			<Option target="gomoku"/>
+		</Unit>
+		<Unit filename="/home/piotr/Documents/cpp/gomoku/headers/GameLoop.h">
+			<Option target="gomoku"/>
+		</Unit>
 		<Unit filename="/home/piotr/Documents/cpp/gomoku/headers/Logger.h">
+			<Option target="gomoku"/>
+		</Unit>
+		<Unit filename="/home/piotr/Documents/cpp/gomoku/headers/MainMenu.h">
 			<Option target="gomoku"/>
 		</Unit>
 		<Unit filename="/home/piotr/Documents/cpp/gomoku/main.cpp">

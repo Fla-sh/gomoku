@@ -12,11 +12,13 @@
 class Logger {
 public:
     Logger();
+    static std::string getPrompt();
     static void saveMove(int x, int y, char symbol);
     static void purgeMoveLog();
     static void safeEvent(std::string event);
 
 private:
+    static const std::string prompt;
     static std::string now();
 };
 

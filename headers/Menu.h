@@ -8,13 +8,15 @@
 
 class Menu {
 private:
-    int option;
-    void newGame();
-    void continueGame();
+    virtual void option1() = 0;
+    virtual void option2() = 0;
+    virtual void option3() = 0;
+    virtual void option4() = 0;
 
 public:
-    Menu();
-    void chooseOption();
+    //Menu();
+    virtual void executeOption() = 0;
+    virtual void chooseOption() = 0;
 };
 
 

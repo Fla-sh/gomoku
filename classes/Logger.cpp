@@ -6,8 +6,9 @@
 #include <ctime>
 #include <iostream>
 
-Logger::Logger() {
+const std::string Logger::prompt = "-->";
 
+Logger::Logger() {
 }
 
 void Logger::saveMove(int x, int y, char symbol) {
@@ -44,5 +45,9 @@ void Logger::safeEvent(std::string event) {
 std::string Logger::now() {
     time_t now = time(0);
     return ctime(&now);
+}
+
+std::string Logger::getPrompt() {
+    return Logger::prompt;
 }
 

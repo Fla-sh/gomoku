@@ -123,6 +123,114 @@ gomoku/fast:
 	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/build
 .PHONY : gomoku/fast
 
+classes/Board.o: classes/Board.cpp.o
+
+.PHONY : classes/Board.o
+
+# target to build an object file
+classes/Board.cpp.o:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/Board.cpp.o
+.PHONY : classes/Board.cpp.o
+
+classes/Board.i: classes/Board.cpp.i
+
+.PHONY : classes/Board.i
+
+# target to preprocess a source file
+classes/Board.cpp.i:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/Board.cpp.i
+.PHONY : classes/Board.cpp.i
+
+classes/Board.s: classes/Board.cpp.s
+
+.PHONY : classes/Board.s
+
+# target to generate assembly for a file
+classes/Board.cpp.s:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/Board.cpp.s
+.PHONY : classes/Board.cpp.s
+
+classes/Drawer.o: classes/Drawer.cpp.o
+
+.PHONY : classes/Drawer.o
+
+# target to build an object file
+classes/Drawer.cpp.o:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/Drawer.cpp.o
+.PHONY : classes/Drawer.cpp.o
+
+classes/Drawer.i: classes/Drawer.cpp.i
+
+.PHONY : classes/Drawer.i
+
+# target to preprocess a source file
+classes/Drawer.cpp.i:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/Drawer.cpp.i
+.PHONY : classes/Drawer.cpp.i
+
+classes/Drawer.s: classes/Drawer.cpp.s
+
+.PHONY : classes/Drawer.s
+
+# target to generate assembly for a file
+classes/Drawer.cpp.s:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/Drawer.cpp.s
+.PHONY : classes/Drawer.cpp.s
+
+classes/DrawerClassic.o: classes/DrawerClassic.cpp.o
+
+.PHONY : classes/DrawerClassic.o
+
+# target to build an object file
+classes/DrawerClassic.cpp.o:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/DrawerClassic.cpp.o
+.PHONY : classes/DrawerClassic.cpp.o
+
+classes/DrawerClassic.i: classes/DrawerClassic.cpp.i
+
+.PHONY : classes/DrawerClassic.i
+
+# target to preprocess a source file
+classes/DrawerClassic.cpp.i:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/DrawerClassic.cpp.i
+.PHONY : classes/DrawerClassic.cpp.i
+
+classes/DrawerClassic.s: classes/DrawerClassic.cpp.s
+
+.PHONY : classes/DrawerClassic.s
+
+# target to generate assembly for a file
+classes/DrawerClassic.cpp.s:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/DrawerClassic.cpp.s
+.PHONY : classes/DrawerClassic.cpp.s
+
+classes/GameLoop.o: classes/GameLoop.cpp.o
+
+.PHONY : classes/GameLoop.o
+
+# target to build an object file
+classes/GameLoop.cpp.o:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/GameLoop.cpp.o
+.PHONY : classes/GameLoop.cpp.o
+
+classes/GameLoop.i: classes/GameLoop.cpp.i
+
+.PHONY : classes/GameLoop.i
+
+# target to preprocess a source file
+classes/GameLoop.cpp.i:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/GameLoop.cpp.i
+.PHONY : classes/GameLoop.cpp.i
+
+classes/GameLoop.s: classes/GameLoop.cpp.s
+
+.PHONY : classes/GameLoop.s
+
+# target to generate assembly for a file
+classes/GameLoop.cpp.s:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/GameLoop.cpp.s
+.PHONY : classes/GameLoop.cpp.s
+
 classes/Logger.o: classes/Logger.cpp.o
 
 .PHONY : classes/Logger.o
@@ -149,6 +257,33 @@ classes/Logger.s: classes/Logger.cpp.s
 classes/Logger.cpp.s:
 	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/Logger.cpp.s
 .PHONY : classes/Logger.cpp.s
+
+classes/MainMenu.o: classes/MainMenu.cpp.o
+
+.PHONY : classes/MainMenu.o
+
+# target to build an object file
+classes/MainMenu.cpp.o:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/MainMenu.cpp.o
+.PHONY : classes/MainMenu.cpp.o
+
+classes/MainMenu.i: classes/MainMenu.cpp.i
+
+.PHONY : classes/MainMenu.i
+
+# target to preprocess a source file
+classes/MainMenu.cpp.i:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/MainMenu.cpp.i
+.PHONY : classes/MainMenu.cpp.i
+
+classes/MainMenu.s: classes/MainMenu.cpp.s
+
+.PHONY : classes/MainMenu.s
+
+# target to generate assembly for a file
+classes/MainMenu.cpp.s:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/MainMenu.cpp.s
+.PHONY : classes/MainMenu.cpp.s
 
 main.o: main.cpp.o
 
@@ -186,9 +321,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... gomoku"
+	@echo "... classes/Board.o"
+	@echo "... classes/Board.i"
+	@echo "... classes/Board.s"
+	@echo "... classes/Drawer.o"
+	@echo "... classes/Drawer.i"
+	@echo "... classes/Drawer.s"
+	@echo "... classes/DrawerClassic.o"
+	@echo "... classes/DrawerClassic.i"
+	@echo "... classes/DrawerClassic.s"
+	@echo "... classes/GameLoop.o"
+	@echo "... classes/GameLoop.i"
+	@echo "... classes/GameLoop.s"
 	@echo "... classes/Logger.o"
 	@echo "... classes/Logger.i"
 	@echo "... classes/Logger.s"
+	@echo "... classes/MainMenu.o"
+	@echo "... classes/MainMenu.i"
+	@echo "... classes/MainMenu.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -4,10 +4,12 @@
 
 #include "../headers/Gomoku.h"
 #include "../headers/Menu.h"
-#include "../classes/Menu.cpp"
+#include "../headers/MainMenu.h"
 
 Gomoku::Gomoku() {
-    Menu menu;
-    menu = Menu();
-    menu.chooseOption();
+    while(true) {
+        Menu *menu = new MainMenu();
+        menu->chooseOption();
+        menu->executeOption();
+    }
 }
