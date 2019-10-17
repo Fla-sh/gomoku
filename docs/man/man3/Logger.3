@@ -1,0 +1,116 @@
+.TH "Logger" 3 "Tue Oct 15 2019" "Version 024" "Gomoku" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Logger
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Logger\&.h>\fP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static std::string \fBgetPrompt\fP ()"
+.br
+.ti -1c
+.RI "static void \fBsaveMove\fP (int x, int y, char symbol)"
+.br
+.ti -1c
+.RI "static void \fBpurgeMoveLog\fP ()"
+.br
+.ti -1c
+.RI "static void \fBsafeEvent\fP (std::string event)"
+.br
+.in -1c
+.SS "Static Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static std::string \fBnow\fP ()"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const std::string \fBprompt\fP = '\-\->'"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Facility used to save vital information about processing states and events, for after release program care 
+.PP
+Definition at line 16 of file Logger\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::string Logger::getPrompt ()\fC [static]\fP"
+Returns setup propmpt symbol 
+.PP
+\fBReturns:\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+Definition at line 50 of file Logger\&.cpp\&.
+.SS "std::string Logger::now ()\fC [static]\fP, \fC [private]\fP"
+Current date as UTM format 
+.PP
+\fBReturns:\fP
+.RS 4
+string with date 
+.RE
+.PP
+
+.PP
+Definition at line 45 of file Logger\&.cpp\&.
+.SS "void Logger::purgeMoveLog ()\fC [static]\fP"
+Used to purge mvoe log\&. Used in early versions, now useless 
+.PP
+\fBDeprecated\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+Definition at line 30 of file Logger\&.cpp\&.
+.SS "void Logger::safeEvent (std::string event)\fC [static]\fP"
+Save all events in program to main log -> log\&.log\&.log 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIevent\fP data to save 
+.RE
+.PP
+
+.PP
+Definition at line 37 of file Logger\&.cpp\&.
+.SS "void Logger::saveMove (int x, int y, char symbol)\fC [static]\fP"
+Save moves which made players to separate log -> moves\&.log 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP 
+.br
+\fIy\fP 
+.br
+\fIsymbol\fP 
+.RE
+.PP
+
+.PP
+Definition at line 14 of file Logger\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "const std::string Logger::prompt = '\-\->'\fC [static]\fP, \fC [private]\fP"
+Prompt sign 
+.PP
+Definition at line 50 of file Logger\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Gomoku from the source code\&.

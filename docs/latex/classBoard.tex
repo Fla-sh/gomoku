@@ -1,0 +1,290 @@
+\hypertarget{classBoard}{}\section{Board Class Reference}
+\label{classBoard}\index{Board@{Board}}
+
+
+{\ttfamily \#include $<$Board.\+h$>$}
+
+
+
+Collaboration diagram for Board\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classBoard__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classBoard_a5ee56f4407f7792fe6f134a59d4af190}{move} (std\+::pair$<$ int, int $>$ position)
+\item 
+void \hyperlink{classBoard_afc8625b4719496080a988c294869d56a}{save} ()
+\item 
+int \hyperlink{classBoard_a2e57d7f5e62b0d870fb3ff1b76eb18ba}{get\+Field} (std\+::pair$<$ int, int $>$ position)
+\item 
+void \hyperlink{classBoard_aadae139aa7b1d53e7f9ae0ae0768f417}{recreate} ()
+\item 
+int \hyperlink{classBoard_ad4322f41e87c8a8a99e3424fb2a2a1ec}{get\+Player} ()
+\item 
+int \hyperlink{classBoard_aedc0672dfb6bddabc1c1cf091b483cbb}{get\+Total\+Moves} ()
+\item 
+int \hyperlink{classBoard_adef3bc4bb22a2f54b7703ceff15aea5b}{get\+Winner} ()
+\item 
+int \hyperlink{classBoard_afadc1ddff22c3a2ee25cad41ed7e5da0}{is\+Game\+Ended} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classBoard_a17ee7e0130537721b492cb7ed7235974}{linearise} ()
+\item 
+void \hyperlink{classBoard_a58de3d2bd69db7ef9258b3b907eb9de8}{delinearise} (std\+::string data)
+\item 
+int \hyperlink{classBoard_a2f984f83124db1b1df386ef9deff6a24}{find\+Horizontal} ()
+\item 
+int \hyperlink{classBoard_a4ee8b912055e8705e37a9b37125b70f0}{find\+Vertical} ()
+\item 
+int \hyperlink{classBoard_a99cff26f921e228dc11c381747381ced}{find\+Diagonal} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classBoard_af588c465a63e9447a674398ec44446a9}{board} \mbox{[}15\mbox{]}\mbox{[}15\mbox{]}
+\item 
+int \hyperlink{classBoard_a67eeec840d17ab997e32234493ac7e39}{winner}
+\item 
+int \hyperlink{classBoard_a86b952cc745c2bd392f74434653457d3}{current\+Player}
+\item 
+int \hyperlink{classBoard_abfd418c2974974039da3fff24ad5c185}{made\+Moves}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class represents board on which players are playing. It is 15x15 fields size. Each player puts its marks on board. \hyperlink{classBoard}{Board} does not have \hyperlink{classDrawer}{Drawer} service in-\/built. It\textquotesingle{}s implemented in \hyperlink{classDrawer}{Drawer} Class. 
+
+Definition at line 16 of file Board.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBoard_a58de3d2bd69db7ef9258b3b907eb9de8}\label{classBoard_a58de3d2bd69db7ef9258b3b907eb9de8}} 
+\index{Board@{Board}!delinearise@{delinearise}}
+\index{delinearise@{delinearise}!Board@{Board}}
+\subsubsection{\texorpdfstring{delinearise()}{delinearise()}}
+{\footnotesize\ttfamily void Board\+::delinearise (\begin{DoxyParamCaption}\item[{std\+::string}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Translate game state from string into 2D array -\/$>$ board 
+\begin{DoxyParams}{Parameters}
+{\em data} & string we like to translate \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 69 of file Board.\+cpp.
+
+\mbox{\Hypertarget{classBoard_a99cff26f921e228dc11c381747381ced}\label{classBoard_a99cff26f921e228dc11c381747381ced}} 
+\index{Board@{Board}!find\+Diagonal@{find\+Diagonal}}
+\index{find\+Diagonal@{find\+Diagonal}!Board@{Board}}
+\subsubsection{\texorpdfstring{find\+Diagonal()}{findDiagonal()}}
+{\footnotesize\ttfamily int Board\+::find\+Diagonal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Same as previous, but performed in diagonals \begin{DoxyReturn}{Returns}
+player number if any player won, or 0 if not 
+\end{DoxyReturn}
+
+
+Definition at line 133 of file Board.\+cpp.
+
+\mbox{\Hypertarget{classBoard_a2f984f83124db1b1df386ef9deff6a24}\label{classBoard_a2f984f83124db1b1df386ef9deff6a24}} 
+\index{Board@{Board}!find\+Horizontal@{find\+Horizontal}}
+\index{find\+Horizontal@{find\+Horizontal}!Board@{Board}}
+\subsubsection{\texorpdfstring{find\+Horizontal()}{findHorizontal()}}
+{\footnotesize\ttfamily int Board\+::find\+Horizontal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Check if in any row was 5 the same signs \begin{DoxyReturn}{Returns}
+player number if any player won, or 0 if not 
+\end{DoxyReturn}
+
+
+Definition at line 106 of file Board.\+cpp.
+
+\mbox{\Hypertarget{classBoard_a4ee8b912055e8705e37a9b37125b70f0}\label{classBoard_a4ee8b912055e8705e37a9b37125b70f0}} 
+\index{Board@{Board}!find\+Vertical@{find\+Vertical}}
+\index{find\+Vertical@{find\+Vertical}!Board@{Board}}
+\subsubsection{\texorpdfstring{find\+Vertical()}{findVertical()}}
+{\footnotesize\ttfamily int Board\+::find\+Vertical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Same as previous but performed in columns \begin{DoxyReturn}{Returns}
+player number if any player won, or 0 if not 
+\end{DoxyReturn}
+
+
+Definition at line 119 of file Board.\+cpp.
+
+\mbox{\Hypertarget{classBoard_a2e57d7f5e62b0d870fb3ff1b76eb18ba}\label{classBoard_a2e57d7f5e62b0d870fb3ff1b76eb18ba}} 
+\index{Board@{Board}!get\+Field@{get\+Field}}
+\index{get\+Field@{get\+Field}!Board@{Board}}
+\subsubsection{\texorpdfstring{get\+Field()}{getField()}}
+{\footnotesize\ttfamily int Board\+::get\+Field (\begin{DoxyParamCaption}\item[{std\+::pair$<$ int, int $>$}]{position }\end{DoxyParamCaption})}
+
+Returns mark on pointed field 
+\begin{DoxyParams}{Parameters}
+{\em position} & position wich we\textquotesingle{}d like to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mark as number 
+\end{DoxyReturn}
+
+
+Definition at line 52 of file Board.\+cpp.
+
+\mbox{\Hypertarget{classBoard_ad4322f41e87c8a8a99e3424fb2a2a1ec}\label{classBoard_ad4322f41e87c8a8a99e3424fb2a2a1ec}} 
+\index{Board@{Board}!get\+Player@{get\+Player}}
+\index{get\+Player@{get\+Player}!Board@{Board}}
+\subsubsection{\texorpdfstring{get\+Player()}{getPlayer()}}
+{\footnotesize\ttfamily int Board\+::get\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter for current player \begin{DoxyReturn}{Returns}
+current player as number 
+\end{DoxyReturn}
+
+
+Definition at line 77 of file Board.\+cpp.
+
+\mbox{\Hypertarget{classBoard_aedc0672dfb6bddabc1c1cf091b483cbb}\label{classBoard_aedc0672dfb6bddabc1c1cf091b483cbb}} 
+\index{Board@{Board}!get\+Total\+Moves@{get\+Total\+Moves}}
+\index{get\+Total\+Moves@{get\+Total\+Moves}!Board@{Board}}
+\subsubsection{\texorpdfstring{get\+Total\+Moves()}{getTotalMoves()}}
+{\footnotesize\ttfamily int Board\+::get\+Total\+Moves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter for total number of made moves during this game \begin{DoxyReturn}{Returns}
+total number of moves 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file Board.\+cpp.
+
+\mbox{\Hypertarget{classBoard_adef3bc4bb22a2f54b7703ceff15aea5b}\label{classBoard_adef3bc4bb22a2f54b7703ceff15aea5b}} 
+\index{Board@{Board}!get\+Winner@{get\+Winner}}
+\index{get\+Winner@{get\+Winner}!Board@{Board}}
+\subsubsection{\texorpdfstring{get\+Winner()}{getWinner()}}
+{\footnotesize\ttfamily int Board\+::get\+Winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter for winner player \begin{DoxyReturn}{Returns}
+winner player 
+\end{DoxyReturn}
+
+
+Definition at line 164 of file Board.\+cpp.
+
+\mbox{\Hypertarget{classBoard_afadc1ddff22c3a2ee25cad41ed7e5da0}\label{classBoard_afadc1ddff22c3a2ee25cad41ed7e5da0}} 
+\index{Board@{Board}!is\+Game\+Ended@{is\+Game\+Ended}}
+\index{is\+Game\+Ended@{is\+Game\+Ended}!Board@{Board}}
+\subsubsection{\texorpdfstring{is\+Game\+Ended()}{isGameEnded()}}
+{\footnotesize\ttfamily int Board\+::is\+Game\+Ended (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if endgame condition is fulfiled \begin{DoxyReturn}{Returns}
+player number if any player won, or 0 if not 
+\end{DoxyReturn}
+
+
+Definition at line 85 of file Board.\+cpp.
+
+\mbox{\Hypertarget{classBoard_a17ee7e0130537721b492cb7ed7235974}\label{classBoard_a17ee7e0130537721b492cb7ed7235974}} 
+\index{Board@{Board}!linearise@{linearise}}
+\index{linearise@{linearise}!Board@{Board}}
+\subsubsection{\texorpdfstring{linearise()}{linearise()}}
+{\footnotesize\ttfamily std\+::string Board\+::linearise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Function linearise bord into string, which is used to save game progress \begin{DoxyReturn}{Returns}
+board as linearised string 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file Board.\+cpp.
+
+\mbox{\Hypertarget{classBoard_a5ee56f4407f7792fe6f134a59d4af190}\label{classBoard_a5ee56f4407f7792fe6f134a59d4af190}} 
+\index{Board@{Board}!move@{move}}
+\index{move@{move}!Board@{Board}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Board\+::move (\begin{DoxyParamCaption}\item[{std\+::pair$<$ int, int $>$}]{position }\end{DoxyParamCaption})}
+
+Update board with player move. Notice players are choosen by function no by caller. 
+\begin{DoxyParams}{Parameters}
+{\em position} & position on which we put mark \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 32 of file Board.\+cpp.
+
+\mbox{\Hypertarget{classBoard_aadae139aa7b1d53e7f9ae0ae0768f417}\label{classBoard_aadae139aa7b1d53e7f9ae0ae0768f417}} 
+\index{Board@{Board}!recreate@{recreate}}
+\index{recreate@{recreate}!Board@{Board}}
+\subsubsection{\texorpdfstring{recreate()}{recreate()}}
+{\footnotesize\ttfamily void Board\+::recreate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Recreates board state after save 
+
+Definition at line 58 of file Board.\+cpp.
+
+\mbox{\Hypertarget{classBoard_afc8625b4719496080a988c294869d56a}\label{classBoard_afc8625b4719496080a988c294869d56a}} 
+\index{Board@{Board}!save@{save}}
+\index{save@{save}!Board@{Board}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Board\+::save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Save game state to file -\/$>$ Game.\+save 
+
+Definition at line 43 of file Board.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classBoard_af588c465a63e9447a674398ec44446a9}\label{classBoard_af588c465a63e9447a674398ec44446a9}} 
+\index{Board@{Board}!board@{board}}
+\index{board@{board}!Board@{Board}}
+\subsubsection{\texorpdfstring{board}{board}}
+{\footnotesize\ttfamily int Board\+::board\mbox{[}15\mbox{]}\mbox{[}15\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+Actual board 
+
+Definition at line 21 of file Board.\+h.
+
+\mbox{\Hypertarget{classBoard_a86b952cc745c2bd392f74434653457d3}\label{classBoard_a86b952cc745c2bd392f74434653457d3}} 
+\index{Board@{Board}!current\+Player@{current\+Player}}
+\index{current\+Player@{current\+Player}!Board@{Board}}
+\subsubsection{\texorpdfstring{current\+Player}{currentPlayer}}
+{\footnotesize\ttfamily int Board\+::current\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+Number of player which made move. Updated after move was made 
+
+Definition at line 44 of file Board.\+h.
+
+\mbox{\Hypertarget{classBoard_abfd418c2974974039da3fff24ad5c185}\label{classBoard_abfd418c2974974039da3fff24ad5c185}} 
+\index{Board@{Board}!made\+Moves@{made\+Moves}}
+\index{made\+Moves@{made\+Moves}!Board@{Board}}
+\subsubsection{\texorpdfstring{made\+Moves}{madeMoves}}
+{\footnotesize\ttfamily int Board\+::made\+Moves\hspace{0.3cm}{\ttfamily [private]}}
+
+Number of made moves. Updated after move was made 
+
+Definition at line 50 of file Board.\+h.
+
+\mbox{\Hypertarget{classBoard_a67eeec840d17ab997e32234493ac7e39}\label{classBoard_a67eeec840d17ab997e32234493ac7e39}} 
+\index{Board@{Board}!winner@{winner}}
+\index{winner@{winner}!Board@{Board}}
+\subsubsection{\texorpdfstring{winner}{winner}}
+{\footnotesize\ttfamily int Board\+::winner\hspace{0.3cm}{\ttfamily [private]}}
+
+Player which won 
+
+Definition at line 26 of file Board.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/Board.\+h\item 
+classes/Board.\+cpp\end{DoxyCompactItemize}

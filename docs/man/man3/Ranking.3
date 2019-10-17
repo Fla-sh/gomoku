@@ -1,0 +1,91 @@
+.TH "Ranking" 3 "Tue Oct 15 2019" "Version 024" "Gomoku" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Ranking
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Ranking\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBadd\fP (int value)"
+.br
+.ti -1c
+.RI "void \fBdisplay\fP (int amount)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsort\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBnow\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< std::pair< int, std::string > > \fBranking\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Facility used to collect data about best results achieved by players\&. All data are saved to ranking\&.r file\&. Facility don't have self contained list/vector of best result\&. Operation saving and reading results is operating on file each time\&. This approach saves RAM space, especially if there is a lots of data on record 
+.PP
+Definition at line 17 of file Ranking\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Ranking::add (int value)"
+Appends value to record\&.r file 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP to append 
+.RE
+.PP
+
+.PP
+Definition at line 20 of file Ranking\&.cpp\&.
+.SS "void Ranking::display (int amount)"
+Reads data from record\&.r file, sort it and display 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIamount\fP of data to display 
+.RE
+.PP
+
+.PP
+Definition at line 27 of file Ranking\&.cpp\&.
+.SS "std::string Ranking::now ()\fC [private]\fP"
+Current date as formated string 
+.PP
+\fBReturns:\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+Definition at line 49 of file Ranking\&.cpp\&.
+.SS "void Ranking::sort ()\fC [private]\fP"
+Abstractions layer for std::sort 
+.PP
+Definition at line 12 of file Ranking\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<std::pair<int, std::string> > Ranking::ranking\fC [private]\fP"
+Vector with ranking, data are hold in it only for short while when user wants to see its records table\&. 
+.PP
+Definition at line 23 of file Ranking\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Gomoku from the source code\&.

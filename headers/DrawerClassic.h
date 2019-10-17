@@ -8,12 +8,15 @@
 
 #include "Drawer.h"
 
+/**
+ * Is implementation of Drawer.
+ * In this version player1 is X and player2 is O.
+ */
 class DrawerClassic: public Drawer {
+private:
     const std::string XMark = "X";
     const std::string OMark = "O";
     const std::string EmptyMark = " ";
-    const std::string verticalSeparator = "";
-    const std::string horizontalSeparator = "";
 public:
     virtual void draw(Board board) override;
 

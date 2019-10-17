@@ -1,0 +1,98 @@
+.TH "GameLoop" 3 "Tue Oct 15 2019" "Version 024" "Gomoku" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GameLoop
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GameLoop\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBstartNew\fP ()"
+.br
+.ti -1c
+.RI "void \fBcontinueGame\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBplay\fP ()"
+.br
+.ti -1c
+.RI "void \fBend\fP ()"
+.br
+.ti -1c
+.RI "void \fBisNumber\fP (std::string text)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBstillPlaying\fP"
+.br
+.ti -1c
+.RI "\fBBoard\fP \fBboard\fP"
+.br
+.ti -1c
+.RI "\fBDrawer\fP * \fBdrawer\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class which is main Game loop\&. Contains method for controlling game state\&. Class is not main Program loop, which is \fBGomoku\fP class 
+.PP
+Definition at line 17 of file GameLoop\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void GameLoop::continueGame ()"
+Loads last saved \fBBoard\fP setup, and calls \fBplay()\fP 
+.PP
+Definition at line 24 of file GameLoop\&.cpp\&.
+.SS "void GameLoop::end ()\fC [private]\fP"
+Called if game was won by one of the players\&. Notify who is the winner save results to \fBRanking\fP, and save empty board, so choosing to continue in main menu don't bring board with immediately winning setup 
+.PP
+Definition at line 89 of file GameLoop\&.cpp\&.
+.SS "void GameLoop::isNumber (std::string text)\fC [private]\fP"
+Check if given text is a unsigned int 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItext\fP value to check 
+.RE
+.PP
+
+.PP
+Definition at line 78 of file GameLoop\&.cpp\&.
+.SS "void GameLoop::play ()\fC [private]\fP"
+Function which reads user inputs, and calls \fBBoard\fP and \fBDrawer\fP, as well as checking if inputs was valid, and if player wants to exit game 
+.PP
+Definition at line 30 of file GameLoop\&.cpp\&.
+.SS "void GameLoop::startNew ()"
+Starts new game, just calls \fBplay()\fP function 
+.PP
+Definition at line 20 of file GameLoop\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBBoard\fP GameLoop::board\fC [private]\fP"
+Class which represents board 
+.PP
+Definition at line 27 of file GameLoop\&.h\&.
+.SS "\fBDrawer\fP* GameLoop::drawer\fC [private]\fP"
+Contains information about chosen \fBDrawer\fP 
+.PP
+Definition at line 32 of file GameLoop\&.h\&.
+.SS "bool GameLoop::stillPlaying\fC [private]\fP"
+Flag pointing true if game is not ended in some reason, e\&.g\&. won of one of players 
+.PP
+Definition at line 22 of file GameLoop\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Gomoku from the source code\&.

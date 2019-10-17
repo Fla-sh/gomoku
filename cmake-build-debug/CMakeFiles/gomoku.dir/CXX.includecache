@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/piotr/Documents/cpp/gomoku/classes/GameLoop.cpp
-iostream
--
-../headers/GameLoop.h
-/home/piotr/Documents/cpp/gomoku/headers/GameLoop.h
-../headers/Board.h
-/home/piotr/Documents/cpp/gomoku/headers/Board.h
-../headers/Drawer.h
-/home/piotr/Documents/cpp/gomoku/headers/Drawer.h
-../headers/DrawerClassic.h
-/home/piotr/Documents/cpp/gomoku/headers/DrawerClassic.h
-
 /home/piotr/Documents/cpp/gomoku/classes/MainMenu.cpp
 iostream
 -
@@ -27,6 +15,8 @@ iostream
 /home/piotr/Documents/cpp/gomoku/headers/Logger.h
 ../headers/GameLoop.h
 /home/piotr/Documents/cpp/gomoku/headers/GameLoop.h
+../headers/Ranking.h
+/home/piotr/Documents/cpp/gomoku/headers/Ranking.h
 
 /home/piotr/Documents/cpp/gomoku/classes/Menu.cpp
 ../headers/Menu.h
@@ -69,4 +59,10 @@ Menu.h
 /home/piotr/Documents/cpp/gomoku/classes/Menu.cpp
 
 /home/piotr/Documents/cpp/gomoku/headers/Menu.h
+
+/home/piotr/Documents/cpp/gomoku/headers/Ranking.h
+vector
+-
+string
+-
 

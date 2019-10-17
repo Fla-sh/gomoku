@@ -5,7 +5,9 @@
 #ifndef GOMOKU_GOMOKU_H
 #define GOMOKU_GOMOKU_H
 
-
+/**
+ * Program main loop
+ */
 class Gomoku {
 public:
     Gomoku();

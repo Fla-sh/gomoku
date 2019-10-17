@@ -1,0 +1,80 @@
+\hypertarget{classDrawer}{}\section{Drawer Class Reference}
+\label{classDrawer}\index{Drawer@{Drawer}}
+
+
+{\ttfamily \#include $<$Drawer.\+h$>$}
+
+
+
+Inheritance diagram for Drawer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDrawer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Drawer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=153pt]{classDrawer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classDrawer_afe75fce45596f02f01514322ebd57c8c}{draw} (\hyperlink{classBoard}{Board} board)=0
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDrawer_a86db125a08ba0e79d545542a69fde9d3}\label{classDrawer_a86db125a08ba0e79d545542a69fde9d3}} 
+const std\+::string {\bfseries X\+Mark}
+\item 
+\mbox{\Hypertarget{classDrawer_a007403c532527c21334e81e214109676}\label{classDrawer_a007403c532527c21334e81e214109676}} 
+const std\+::string {\bfseries O\+Mark}
+\item 
+\mbox{\Hypertarget{classDrawer_a673b951b13d86a6d46bde89029f149b3}\label{classDrawer_a673b951b13d86a6d46bde89029f149b3}} 
+const std\+::string {\bfseries Empty\+Mark}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classDrawer}{Drawer} class represents in console current \hyperlink{classBoard}{Board} state. \hyperlink{classDrawer}{Drawer} is an abstract class which is implemented in its subclass \begin{DoxySeeAlso}{See also}
+\hyperlink{classDrawerClassic}{Drawer\+Classic} 
+
+\hyperlink{classDrawerAlternative}{Drawer\+Alternative} 
+
+\hyperlink{classDrawerMess}{Drawer\+Mess} 
+\end{DoxySeeAlso}
+
+
+Definition at line 19 of file Drawer.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDrawer_afe75fce45596f02f01514322ebd57c8c}\label{classDrawer_afe75fce45596f02f01514322ebd57c8c}} 
+\index{Drawer@{Drawer}!draw@{draw}}
+\index{draw@{draw}!Drawer@{Drawer}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Drawer\+::draw (\begin{DoxyParamCaption}\item[{\hyperlink{classBoard}{Board}}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Draws \hyperlink{classBoard}{Board} on screen 
+\begin{DoxyParams}{Parameters}
+{\em board} & board which should be drawn \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classDrawerMess_a6d682acdf4ad01f370f9985cacd606a9}{Drawer\+Mess}, \hyperlink{classDrawerAlternative_a2d56b61df9a3878c9aa24db5896578ba}{Drawer\+Alternative}, and \hyperlink{classDrawerClassic_ab5e18d90571afab9a2b8482b2d9d8264}{Drawer\+Classic}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/Drawer.\+h\end{DoxyCompactItemize}

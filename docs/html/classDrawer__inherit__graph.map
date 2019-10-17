@@ -1,0 +1,5 @@
+<map id="Drawer" name="Drawer">
+<area shape="rect" id="node2" href="$classDrawerAlternative.html" title="{DrawerAlternative\n|&#45; XMark\l&#45; OMark\l&#45; EmptyMark\l|+ draw()\l}" alt="" coords="5,160,132,267"/>
+<area shape="rect" id="node3" href="$classDrawerClassic.html" title="{DrawerClassic\n|&#45; XMark\l&#45; OMark\l&#45; EmptyMark\l|+ draw()\l}" alt="" coords="156,160,264,267"/>
+<area shape="rect" id="node4" href="$classDrawerMess.html" title="{DrawerMess\n|&#45; XMark\l&#45; OMark\l&#45; EmptyMark\l|+ draw()\l}" alt="" coords="288,160,385,267"/>
+</map>

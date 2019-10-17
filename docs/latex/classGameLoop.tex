@@ -1,0 +1,145 @@
+\hypertarget{classGameLoop}{}\section{Game\+Loop Class Reference}
+\label{classGameLoop}\index{Game\+Loop@{Game\+Loop}}
+
+
+{\ttfamily \#include $<$Game\+Loop.\+h$>$}
+
+
+
+Collaboration diagram for Game\+Loop\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classGameLoop__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classGameLoop_a12718de4b3e9535288cc77c8d5f27979}{start\+New} ()
+\item 
+void \hyperlink{classGameLoop_adc88e75cb8106655d88296cc082767bc}{continue\+Game} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classGameLoop_a7e143e66d9a047a15d20c20da85f23d0}{play} ()
+\item 
+void \hyperlink{classGameLoop_a30733a30b29bc93c3009b62bde59ddde}{end} ()
+\item 
+void \hyperlink{classGameLoop_aef095ed6895919ae55e260b0149ff29a}{is\+Number} (std\+::string text)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classGameLoop_a74bff510eaf3cab91599f164dfa903cf}{still\+Playing}
+\item 
+\hyperlink{classBoard}{Board} \hyperlink{classGameLoop_a73ffb8954f2f2fd298e2bfe22be73ce6}{board}
+\item 
+\hyperlink{classDrawer}{Drawer} $\ast$ \hyperlink{classGameLoop_a9f25ffc0e91f10c6030ca6b05032f71f}{drawer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class which is main Game loop. Contains method for controlling game state. Class is not main Program loop, which is \hyperlink{classGomoku}{Gomoku} class 
+
+Definition at line 17 of file Game\+Loop.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGameLoop_adc88e75cb8106655d88296cc082767bc}\label{classGameLoop_adc88e75cb8106655d88296cc082767bc}} 
+\index{Game\+Loop@{Game\+Loop}!continue\+Game@{continue\+Game}}
+\index{continue\+Game@{continue\+Game}!Game\+Loop@{Game\+Loop}}
+\subsubsection{\texorpdfstring{continue\+Game()}{continueGame()}}
+{\footnotesize\ttfamily void Game\+Loop\+::continue\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Loads last saved \hyperlink{classBoard}{Board} setup, and calls \hyperlink{classGameLoop_a7e143e66d9a047a15d20c20da85f23d0}{play()} 
+
+Definition at line 24 of file Game\+Loop.\+cpp.
+
+\mbox{\Hypertarget{classGameLoop_a30733a30b29bc93c3009b62bde59ddde}\label{classGameLoop_a30733a30b29bc93c3009b62bde59ddde}} 
+\index{Game\+Loop@{Game\+Loop}!end@{end}}
+\index{end@{end}!Game\+Loop@{Game\+Loop}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily void Game\+Loop\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Called if game was won by one of the players. Notify who is the winner save results to \hyperlink{classRanking}{Ranking}, and save empty board, so choosing to continue in main menu don\textquotesingle{}t bring board with immediately winning setup 
+
+Definition at line 89 of file Game\+Loop.\+cpp.
+
+\mbox{\Hypertarget{classGameLoop_aef095ed6895919ae55e260b0149ff29a}\label{classGameLoop_aef095ed6895919ae55e260b0149ff29a}} 
+\index{Game\+Loop@{Game\+Loop}!is\+Number@{is\+Number}}
+\index{is\+Number@{is\+Number}!Game\+Loop@{Game\+Loop}}
+\subsubsection{\texorpdfstring{is\+Number()}{isNumber()}}
+{\footnotesize\ttfamily void Game\+Loop\+::is\+Number (\begin{DoxyParamCaption}\item[{std\+::string}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Check if given text is a unsigned int 
+\begin{DoxyParams}{Parameters}
+{\em text} & value to check \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 78 of file Game\+Loop.\+cpp.
+
+\mbox{\Hypertarget{classGameLoop_a7e143e66d9a047a15d20c20da85f23d0}\label{classGameLoop_a7e143e66d9a047a15d20c20da85f23d0}} 
+\index{Game\+Loop@{Game\+Loop}!play@{play}}
+\index{play@{play}!Game\+Loop@{Game\+Loop}}
+\subsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void Game\+Loop\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Function which reads user inputs, and calls \hyperlink{classBoard}{Board} and \hyperlink{classDrawer}{Drawer}, as well as checking if inputs was valid, and if player wants to exit game 
+
+Definition at line 30 of file Game\+Loop.\+cpp.
+
+\mbox{\Hypertarget{classGameLoop_a12718de4b3e9535288cc77c8d5f27979}\label{classGameLoop_a12718de4b3e9535288cc77c8d5f27979}} 
+\index{Game\+Loop@{Game\+Loop}!start\+New@{start\+New}}
+\index{start\+New@{start\+New}!Game\+Loop@{Game\+Loop}}
+\subsubsection{\texorpdfstring{start\+New()}{startNew()}}
+{\footnotesize\ttfamily void Game\+Loop\+::start\+New (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Starts new game, just calls \hyperlink{classGameLoop_a7e143e66d9a047a15d20c20da85f23d0}{play()} function 
+
+Definition at line 20 of file Game\+Loop.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classGameLoop_a73ffb8954f2f2fd298e2bfe22be73ce6}\label{classGameLoop_a73ffb8954f2f2fd298e2bfe22be73ce6}} 
+\index{Game\+Loop@{Game\+Loop}!board@{board}}
+\index{board@{board}!Game\+Loop@{Game\+Loop}}
+\subsubsection{\texorpdfstring{board}{board}}
+{\footnotesize\ttfamily \hyperlink{classBoard}{Board} Game\+Loop\+::board\hspace{0.3cm}{\ttfamily [private]}}
+
+Class which represents board 
+
+Definition at line 27 of file Game\+Loop.\+h.
+
+\mbox{\Hypertarget{classGameLoop_a9f25ffc0e91f10c6030ca6b05032f71f}\label{classGameLoop_a9f25ffc0e91f10c6030ca6b05032f71f}} 
+\index{Game\+Loop@{Game\+Loop}!drawer@{drawer}}
+\index{drawer@{drawer}!Game\+Loop@{Game\+Loop}}
+\subsubsection{\texorpdfstring{drawer}{drawer}}
+{\footnotesize\ttfamily \hyperlink{classDrawer}{Drawer}$\ast$ Game\+Loop\+::drawer\hspace{0.3cm}{\ttfamily [private]}}
+
+Contains information about chosen \hyperlink{classDrawer}{Drawer} 
+
+Definition at line 32 of file Game\+Loop.\+h.
+
+\mbox{\Hypertarget{classGameLoop_a74bff510eaf3cab91599f164dfa903cf}\label{classGameLoop_a74bff510eaf3cab91599f164dfa903cf}} 
+\index{Game\+Loop@{Game\+Loop}!still\+Playing@{still\+Playing}}
+\index{still\+Playing@{still\+Playing}!Game\+Loop@{Game\+Loop}}
+\subsubsection{\texorpdfstring{still\+Playing}{stillPlaying}}
+{\footnotesize\ttfamily bool Game\+Loop\+::still\+Playing\hspace{0.3cm}{\ttfamily [private]}}
+
+Flag pointing true if game is not ended in some reason, e.\+g. won of one of players 
+
+Definition at line 22 of file Game\+Loop.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/Game\+Loop.\+h\item 
+classes/Game\+Loop.\+cpp\end{DoxyCompactItemize}

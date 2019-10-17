@@ -8,16 +8,29 @@ CMakeFiles/gomoku.dir/classes/Drawer.cpp.o: ../classes/Drawer.cpp
 CMakeFiles/gomoku.dir/classes/Drawer.cpp.o: ../headers/Board.h
 CMakeFiles/gomoku.dir/classes/Drawer.cpp.o: ../headers/Drawer.h
 
+CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.o: ../classes/DrawerAlternative.cpp
+CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.o: ../headers/Board.h
+CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.o: ../headers/Drawer.h
+CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.o: ../headers/DrawerAlternative.h
+
 CMakeFiles/gomoku.dir/classes/DrawerClassic.cpp.o: ../classes/DrawerClassic.cpp
 CMakeFiles/gomoku.dir/classes/DrawerClassic.cpp.o: ../headers/Board.h
 CMakeFiles/gomoku.dir/classes/DrawerClassic.cpp.o: ../headers/Drawer.h
 CMakeFiles/gomoku.dir/classes/DrawerClassic.cpp.o: ../headers/DrawerClassic.h
 
+CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.o: ../classes/DrawerMess.cpp
+CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.o: ../headers/Board.h
+CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.o: ../headers/Drawer.h
+CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.o: ../headers/DrawerMess.h
+
 CMakeFiles/gomoku.dir/classes/GameLoop.cpp.o: ../classes/GameLoop.cpp
 CMakeFiles/gomoku.dir/classes/GameLoop.cpp.o: ../headers/Board.h
 CMakeFiles/gomoku.dir/classes/GameLoop.cpp.o: ../headers/Drawer.h
+CMakeFiles/gomoku.dir/classes/GameLoop.cpp.o: ../headers/DrawerAlternative.h
 CMakeFiles/gomoku.dir/classes/GameLoop.cpp.o: ../headers/DrawerClassic.h
+CMakeFiles/gomoku.dir/classes/GameLoop.cpp.o: ../headers/DrawerMess.h
 CMakeFiles/gomoku.dir/classes/GameLoop.cpp.o: ../headers/GameLoop.h
+CMakeFiles/gomoku.dir/classes/GameLoop.cpp.o: ../headers/Ranking.h
 
 CMakeFiles/gomoku.dir/classes/Logger.cpp.o: ../classes/Logger.cpp
 CMakeFiles/gomoku.dir/classes/Logger.cpp.o: ../headers/Logger.h
@@ -31,6 +44,10 @@ CMakeFiles/gomoku.dir/classes/MainMenu.cpp.o: ../headers/GameLoop.h
 CMakeFiles/gomoku.dir/classes/MainMenu.cpp.o: ../headers/Logger.h
 CMakeFiles/gomoku.dir/classes/MainMenu.cpp.o: ../headers/MainMenu.h
 CMakeFiles/gomoku.dir/classes/MainMenu.cpp.o: ../headers/Menu.h
+CMakeFiles/gomoku.dir/classes/MainMenu.cpp.o: ../headers/Ranking.h
+
+CMakeFiles/gomoku.dir/classes/Ranking.cpp.o: ../classes/Ranking.cpp
+CMakeFiles/gomoku.dir/classes/Ranking.cpp.o: ../headers/Ranking.h
 
 CMakeFiles/gomoku.dir/main.cpp.o: ../classes/Gomoku.cpp
 CMakeFiles/gomoku.dir/main.cpp.o: ../classes/Menu.cpp

@@ -5,7 +5,12 @@
 #ifndef GOMOKU_MENU_H
 #define GOMOKU_MENU_H
 
-
+/**
+ * Abstract class for menu creation. Each menu can have up to 4 options.
+ * Process of collecting response, and executing it is separated into
+ * two different funcitons
+ * @see MainMenu
+ */
 class Menu {
 private:
     virtual void option1() = 0;

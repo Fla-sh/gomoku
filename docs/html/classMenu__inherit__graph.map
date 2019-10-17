@@ -1,0 +1,3 @@
+<map id="Menu" name="Menu">
+<area shape="rect" id="node2" href="$classMainMenu.html" title="{MainMenu\n|&#45; option\l|+ MainMenu()\l+ chooseOption()\l+ executeOption()\l+ isNumber()\l&#45; option1()\l&#45; option2()\l&#45; option3()\l&#45; option4()\l}" alt="" coords="5,204,132,384"/>
+</map>

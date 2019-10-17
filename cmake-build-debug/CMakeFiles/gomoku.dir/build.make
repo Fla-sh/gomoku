@@ -148,6 +148,45 @@ CMakeFiles/gomoku.dir/classes/GameLoop.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gomoku.dir/classes/GameLoop.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/piotr/Documents/cpp/gomoku/classes/GameLoop.cpp -o CMakeFiles/gomoku.dir/classes/GameLoop.cpp.s
 
+CMakeFiles/gomoku.dir/classes/Ranking.cpp.o: CMakeFiles/gomoku.dir/flags.make
+CMakeFiles/gomoku.dir/classes/Ranking.cpp.o: ../classes/Ranking.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/piotr/Documents/cpp/gomoku/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gomoku.dir/classes/Ranking.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gomoku.dir/classes/Ranking.cpp.o -c /home/piotr/Documents/cpp/gomoku/classes/Ranking.cpp
+
+CMakeFiles/gomoku.dir/classes/Ranking.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gomoku.dir/classes/Ranking.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/piotr/Documents/cpp/gomoku/classes/Ranking.cpp > CMakeFiles/gomoku.dir/classes/Ranking.cpp.i
+
+CMakeFiles/gomoku.dir/classes/Ranking.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gomoku.dir/classes/Ranking.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/piotr/Documents/cpp/gomoku/classes/Ranking.cpp -o CMakeFiles/gomoku.dir/classes/Ranking.cpp.s
+
+CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.o: CMakeFiles/gomoku.dir/flags.make
+CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.o: ../classes/DrawerAlternative.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/piotr/Documents/cpp/gomoku/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.o -c /home/piotr/Documents/cpp/gomoku/classes/DrawerAlternative.cpp
+
+CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/piotr/Documents/cpp/gomoku/classes/DrawerAlternative.cpp > CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.i
+
+CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/piotr/Documents/cpp/gomoku/classes/DrawerAlternative.cpp -o CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.s
+
+CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.o: CMakeFiles/gomoku.dir/flags.make
+CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.o: ../classes/DrawerMess.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/piotr/Documents/cpp/gomoku/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.o -c /home/piotr/Documents/cpp/gomoku/classes/DrawerMess.cpp
+
+CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/piotr/Documents/cpp/gomoku/classes/DrawerMess.cpp > CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.i
+
+CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/piotr/Documents/cpp/gomoku/classes/DrawerMess.cpp -o CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.s
+
 # Object files for target gomoku
 gomoku_OBJECTS = \
 "CMakeFiles/gomoku.dir/main.cpp.o" \
@@ -156,7 +195,10 @@ gomoku_OBJECTS = \
 "CMakeFiles/gomoku.dir/classes/Drawer.cpp.o" \
 "CMakeFiles/gomoku.dir/classes/Board.cpp.o" \
 "CMakeFiles/gomoku.dir/classes/DrawerClassic.cpp.o" \
-"CMakeFiles/gomoku.dir/classes/GameLoop.cpp.o"
+"CMakeFiles/gomoku.dir/classes/GameLoop.cpp.o" \
+"CMakeFiles/gomoku.dir/classes/Ranking.cpp.o" \
+"CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.o" \
+"CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.o"
 
 # External object files for target gomoku
 gomoku_EXTERNAL_OBJECTS =
@@ -168,9 +210,12 @@ gomoku: CMakeFiles/gomoku.dir/classes/Drawer.cpp.o
 gomoku: CMakeFiles/gomoku.dir/classes/Board.cpp.o
 gomoku: CMakeFiles/gomoku.dir/classes/DrawerClassic.cpp.o
 gomoku: CMakeFiles/gomoku.dir/classes/GameLoop.cpp.o
+gomoku: CMakeFiles/gomoku.dir/classes/Ranking.cpp.o
+gomoku: CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.o
+gomoku: CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.o
 gomoku: CMakeFiles/gomoku.dir/build.make
 gomoku: CMakeFiles/gomoku.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/piotr/Documents/cpp/gomoku/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable gomoku"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/piotr/Documents/cpp/gomoku/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable gomoku"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gomoku.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,0 +1,65 @@
+.TH "Drawer" 3 "Tue Oct 15 2019" "Version 024" "Gomoku" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Drawer
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Drawer\&.h>\fP
+.PP
+Inherited by \fBDrawerAlternative\fP, \fBDrawerClassic\fP, and \fBDrawerMess\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBdraw\fP (\fBBoard\fP board)=0"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "const std::string \fBXMark\fP"
+.br
+.ti -1c
+.RI "const std::string \fBOMark\fP"
+.br
+.ti -1c
+.RI "const std::string \fBEmptyMark\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBDrawer\fP class represents in console current \fBBoard\fP state\&. \fBDrawer\fP is an abstract class which is implemented in its subclass 
+.PP
+\fBSee also:\fP
+.RS 4
+\fBDrawerClassic\fP 
+.PP
+\fBDrawerAlternative\fP 
+.PP
+\fBDrawerMess\fP 
+.RE
+.PP
+
+.PP
+Definition at line 19 of file Drawer\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Drawer::draw (\fBBoard\fP board)\fC [pure virtual]\fP"
+Draws \fBBoard\fP on screen 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIboard\fP board which should be drawn 
+.RE
+.PP
+
+.PP
+Implemented in \fBDrawerMess\fP, \fBDrawerAlternative\fP, and \fBDrawerClassic\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Gomoku from the source code\&.

@@ -177,6 +177,33 @@ classes/Drawer.cpp.s:
 	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/Drawer.cpp.s
 .PHONY : classes/Drawer.cpp.s
 
+classes/DrawerAlternative.o: classes/DrawerAlternative.cpp.o
+
+.PHONY : classes/DrawerAlternative.o
+
+# target to build an object file
+classes/DrawerAlternative.cpp.o:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.o
+.PHONY : classes/DrawerAlternative.cpp.o
+
+classes/DrawerAlternative.i: classes/DrawerAlternative.cpp.i
+
+.PHONY : classes/DrawerAlternative.i
+
+# target to preprocess a source file
+classes/DrawerAlternative.cpp.i:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.i
+.PHONY : classes/DrawerAlternative.cpp.i
+
+classes/DrawerAlternative.s: classes/DrawerAlternative.cpp.s
+
+.PHONY : classes/DrawerAlternative.s
+
+# target to generate assembly for a file
+classes/DrawerAlternative.cpp.s:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.s
+.PHONY : classes/DrawerAlternative.cpp.s
+
 classes/DrawerClassic.o: classes/DrawerClassic.cpp.o
 
 .PHONY : classes/DrawerClassic.o
@@ -203,6 +230,33 @@ classes/DrawerClassic.s: classes/DrawerClassic.cpp.s
 classes/DrawerClassic.cpp.s:
 	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/DrawerClassic.cpp.s
 .PHONY : classes/DrawerClassic.cpp.s
+
+classes/DrawerMess.o: classes/DrawerMess.cpp.o
+
+.PHONY : classes/DrawerMess.o
+
+# target to build an object file
+classes/DrawerMess.cpp.o:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.o
+.PHONY : classes/DrawerMess.cpp.o
+
+classes/DrawerMess.i: classes/DrawerMess.cpp.i
+
+.PHONY : classes/DrawerMess.i
+
+# target to preprocess a source file
+classes/DrawerMess.cpp.i:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.i
+.PHONY : classes/DrawerMess.cpp.i
+
+classes/DrawerMess.s: classes/DrawerMess.cpp.s
+
+.PHONY : classes/DrawerMess.s
+
+# target to generate assembly for a file
+classes/DrawerMess.cpp.s:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.s
+.PHONY : classes/DrawerMess.cpp.s
 
 classes/GameLoop.o: classes/GameLoop.cpp.o
 
@@ -285,6 +339,33 @@ classes/MainMenu.cpp.s:
 	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/MainMenu.cpp.s
 .PHONY : classes/MainMenu.cpp.s
 
+classes/Ranking.o: classes/Ranking.cpp.o
+
+.PHONY : classes/Ranking.o
+
+# target to build an object file
+classes/Ranking.cpp.o:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/Ranking.cpp.o
+.PHONY : classes/Ranking.cpp.o
+
+classes/Ranking.i: classes/Ranking.cpp.i
+
+.PHONY : classes/Ranking.i
+
+# target to preprocess a source file
+classes/Ranking.cpp.i:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/Ranking.cpp.i
+.PHONY : classes/Ranking.cpp.i
+
+classes/Ranking.s: classes/Ranking.cpp.s
+
+.PHONY : classes/Ranking.s
+
+# target to generate assembly for a file
+classes/Ranking.cpp.s:
+	$(MAKE) -f CMakeFiles/gomoku.dir/build.make CMakeFiles/gomoku.dir/classes/Ranking.cpp.s
+.PHONY : classes/Ranking.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -327,9 +408,15 @@ help:
 	@echo "... classes/Drawer.o"
 	@echo "... classes/Drawer.i"
 	@echo "... classes/Drawer.s"
+	@echo "... classes/DrawerAlternative.o"
+	@echo "... classes/DrawerAlternative.i"
+	@echo "... classes/DrawerAlternative.s"
 	@echo "... classes/DrawerClassic.o"
 	@echo "... classes/DrawerClassic.i"
 	@echo "... classes/DrawerClassic.s"
+	@echo "... classes/DrawerMess.o"
+	@echo "... classes/DrawerMess.i"
+	@echo "... classes/DrawerMess.s"
 	@echo "... classes/GameLoop.o"
 	@echo "... classes/GameLoop.i"
 	@echo "... classes/GameLoop.s"
@@ -339,6 +426,9 @@ help:
 	@echo "... classes/MainMenu.o"
 	@echo "... classes/MainMenu.i"
 	@echo "... classes/MainMenu.s"
+	@echo "... classes/Ranking.o"
+	@echo "... classes/Ranking.i"
+	@echo "... classes/Ranking.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

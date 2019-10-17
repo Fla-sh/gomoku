@@ -1,0 +1,117 @@
+\hypertarget{classRanking}{}\section{Ranking Class Reference}
+\label{classRanking}\index{Ranking@{Ranking}}
+
+
+{\ttfamily \#include $<$Ranking.\+h$>$}
+
+
+
+Collaboration diagram for Ranking\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classRanking__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classRanking_a4969110ba50a492be5d125c9b1710cf0}{add} (int value)
+\item 
+void \hyperlink{classRanking_ade50abc368e58d4c7879e437f819e982}{display} (int amount)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classRanking_aa77c088257f2ac17f165147283136016}{sort} ()
+\item 
+std\+::string \hyperlink{classRanking_aa3ed270c7a8a059568c3af87fd73bd03}{now} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::pair$<$ int, std\+::string $>$ $>$ \hyperlink{classRanking_aead444bd691bbfa450ccdec64012ab86}{ranking}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Facility used to collect data about best results achieved by players. All data are saved to ranking.\+r file. Facility don\textquotesingle{}t have self contained list/vector of best result. Operation saving and reading results is operating on file each time. This approach saves R\+AM space, especially if there is a lots of data on record 
+
+Definition at line 17 of file Ranking.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRanking_a4969110ba50a492be5d125c9b1710cf0}\label{classRanking_a4969110ba50a492be5d125c9b1710cf0}} 
+\index{Ranking@{Ranking}!add@{add}}
+\index{add@{add}!Ranking@{Ranking}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Ranking\+::add (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+Appends value to record.\+r file 
+\begin{DoxyParams}{Parameters}
+{\em value} & to append \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file Ranking.\+cpp.
+
+\mbox{\Hypertarget{classRanking_ade50abc368e58d4c7879e437f819e982}\label{classRanking_ade50abc368e58d4c7879e437f819e982}} 
+\index{Ranking@{Ranking}!display@{display}}
+\index{display@{display}!Ranking@{Ranking}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Ranking\+::display (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+Reads data from record.\+r file, sort it and display 
+\begin{DoxyParams}{Parameters}
+{\em amount} & of data to display \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 27 of file Ranking.\+cpp.
+
+\mbox{\Hypertarget{classRanking_aa3ed270c7a8a059568c3af87fd73bd03}\label{classRanking_aa3ed270c7a8a059568c3af87fd73bd03}} 
+\index{Ranking@{Ranking}!now@{now}}
+\index{now@{now}!Ranking@{Ranking}}
+\subsubsection{\texorpdfstring{now()}{now()}}
+{\footnotesize\ttfamily std\+::string Ranking\+::now (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Current date as formated string \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 49 of file Ranking.\+cpp.
+
+\mbox{\Hypertarget{classRanking_aa77c088257f2ac17f165147283136016}\label{classRanking_aa77c088257f2ac17f165147283136016}} 
+\index{Ranking@{Ranking}!sort@{sort}}
+\index{sort@{sort}!Ranking@{Ranking}}
+\subsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily void Ranking\+::sort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Abstractions layer for std\+::sort 
+
+Definition at line 12 of file Ranking.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classRanking_aead444bd691bbfa450ccdec64012ab86}\label{classRanking_aead444bd691bbfa450ccdec64012ab86}} 
+\index{Ranking@{Ranking}!ranking@{ranking}}
+\index{ranking@{ranking}!Ranking@{Ranking}}
+\subsubsection{\texorpdfstring{ranking}{ranking}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::pair$<$int, std\+::string$>$ $>$ Ranking\+::ranking\hspace{0.3cm}{\ttfamily [private]}}
+
+Vector with ranking, data are hold in it only for short while when user wants to see its records table. 
+
+Definition at line 23 of file Ranking.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/Ranking.\+h\item 
+classes/Ranking.\+cpp\end{DoxyCompactItemize}

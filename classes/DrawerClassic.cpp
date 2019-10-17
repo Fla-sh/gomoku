@@ -14,6 +14,7 @@ void DrawerClassic::draw(Board board) {
 
         for(int x = 0; x < 15; x++){
             std::pair<int, int> position(x, y);
+            if(x > 9) std::cout << " ";
             if(board.getField(position) == 1) std::cout << DrawerClassic::OMark;
             else if(board.getField(position) == 2) std::cout << DrawerClassic::XMark;
             else std::cout << DrawerClassic::EmptyMark;

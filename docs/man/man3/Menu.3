@@ -1,0 +1,54 @@
+.TH "Menu" 3 "Tue Oct 15 2019" "Version 024" "Gomoku" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Menu
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Menu\&.h>\fP
+.PP
+Inherited by \fBMainMenu\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBexecuteOption\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBchooseOption\fP ()=0"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBoption1\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBoption2\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBoption3\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBoption4\fP ()=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Abstract class for menu creation\&. Each menu can have up to 4 options\&. Process of collecting response, and executing it is separated into two different funcitons 
+.PP
+\fBSee also:\fP
+.RS 4
+\fBMainMenu\fP 
+.RE
+.PP
+
+.PP
+Definition at line 14 of file Menu\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Gomoku from the source code\&.

@@ -1,0 +1,95 @@
+.TH "MainMenu" 3 "Tue Oct 15 2019" "Version 024" "Gomoku" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MainMenu
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MainMenu\&.h>\fP
+.PP
+Inherits \fBMenu\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBchooseOption\fP () override"
+.br
+.ti -1c
+.RI "void \fBexecuteOption\fP () override"
+.br
+.ti -1c
+.RI "void \fBisNumber\fP (std::string text)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBoption1\fP () override"
+.br
+.ti -1c
+.RI "void \fBoption2\fP () override"
+.br
+.ti -1c
+.RI "void \fBoption3\fP () override"
+.br
+.ti -1c
+.RI "void \fBoption4\fP () override"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBoption\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Main \fBMenu\fP class\&. Allows users to choose between: starting new game, continue last game, or see rankings 
+.PP
+Definition at line 16 of file MainMenu\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void MainMenu::chooseOption ()\fC [override]\fP, \fC [virtual]\fP"
+Displays menu, and collects input 
+.PP
+Implements \fBMenu\fP\&.
+.PP
+Definition at line 34 of file MainMenu\&.cpp\&.
+.SS "void MainMenu::executeOption ()\fC [override]\fP, \fC [virtual]\fP"
+Execute option chosen by user 
+.PP
+Implements \fBMenu\fP\&.
+.PP
+Definition at line 67 of file MainMenu\&.cpp\&.
+.SS "void MainMenu::option1 ()\fC [override]\fP, \fC [private]\fP, \fC [virtual]\fP"
+Here used as New Game option 
+.PP
+Implements \fBMenu\fP\&.
+.PP
+Definition at line 12 of file MainMenu\&.cpp\&.
+.SS "void MainMenu::option2 ()\fC [override]\fP, \fC [private]\fP, \fC [virtual]\fP"
+Here used as Continue option 
+.PP
+Implements \fBMenu\fP\&.
+.PP
+Definition at line 18 of file MainMenu\&.cpp\&.
+.SS "void MainMenu::option3 ()\fC [override]\fP, \fC [private]\fP, \fC [virtual]\fP"
+Here used as See \fBRanking\fP option 
+.PP
+Implements \fBMenu\fP\&.
+.PP
+Definition at line 24 of file MainMenu\&.cpp\&.
+.SS "void MainMenu::option4 ()\fC [override]\fP, \fC [private]\fP, \fC [virtual]\fP"
+Never used here 
+.PP
+Implements \fBMenu\fP\&.
+.PP
+Definition at line 30 of file MainMenu\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Gomoku from the source code\&.

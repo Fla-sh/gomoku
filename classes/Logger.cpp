@@ -35,7 +35,7 @@ void Logger::purgeMoveLog() {
 }
 
 void Logger::safeEvent(std::string event) {
-    std::cout << event << std::endl;
+    //std::cout << event << std::endl;
     std::fstream logFile;
     logFile.open("../log.log.log", std::ios::app);
     logFile << Logger::now() << "   " << event << std::endl << std::endl;

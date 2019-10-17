@@ -8,17 +8,30 @@ CMakeFiles/gomoku.dir/classes/Drawer.cpp.o
  /home/piotr/Documents/cpp/gomoku/classes/Drawer.cpp
  /home/piotr/Documents/cpp/gomoku/headers/Board.h
  /home/piotr/Documents/cpp/gomoku/headers/Drawer.h
+CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.o
+ /home/piotr/Documents/cpp/gomoku/classes/DrawerAlternative.cpp
+ /home/piotr/Documents/cpp/gomoku/headers/Board.h
+ /home/piotr/Documents/cpp/gomoku/headers/Drawer.h
+ /home/piotr/Documents/cpp/gomoku/headers/DrawerAlternative.h
 CMakeFiles/gomoku.dir/classes/DrawerClassic.cpp.o
  /home/piotr/Documents/cpp/gomoku/classes/DrawerClassic.cpp
  /home/piotr/Documents/cpp/gomoku/headers/Board.h
  /home/piotr/Documents/cpp/gomoku/headers/Drawer.h
  /home/piotr/Documents/cpp/gomoku/headers/DrawerClassic.h
+CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.o
+ /home/piotr/Documents/cpp/gomoku/classes/DrawerMess.cpp
+ /home/piotr/Documents/cpp/gomoku/headers/Board.h
+ /home/piotr/Documents/cpp/gomoku/headers/Drawer.h
+ /home/piotr/Documents/cpp/gomoku/headers/DrawerMess.h
 CMakeFiles/gomoku.dir/classes/GameLoop.cpp.o
  /home/piotr/Documents/cpp/gomoku/classes/GameLoop.cpp
  /home/piotr/Documents/cpp/gomoku/headers/Board.h
  /home/piotr/Documents/cpp/gomoku/headers/Drawer.h
+ /home/piotr/Documents/cpp/gomoku/headers/DrawerAlternative.h
  /home/piotr/Documents/cpp/gomoku/headers/DrawerClassic.h
+ /home/piotr/Documents/cpp/gomoku/headers/DrawerMess.h
  /home/piotr/Documents/cpp/gomoku/headers/GameLoop.h
+ /home/piotr/Documents/cpp/gomoku/headers/Ranking.h
 CMakeFiles/gomoku.dir/classes/Logger.cpp.o
  /home/piotr/Documents/cpp/gomoku/classes/Logger.cpp
  /home/piotr/Documents/cpp/gomoku/headers/Logger.h
@@ -32,6 +45,10 @@ CMakeFiles/gomoku.dir/classes/MainMenu.cpp.o
  /home/piotr/Documents/cpp/gomoku/headers/Logger.h
  /home/piotr/Documents/cpp/gomoku/headers/MainMenu.h
  /home/piotr/Documents/cpp/gomoku/headers/Menu.h
+ /home/piotr/Documents/cpp/gomoku/headers/Ranking.h
+CMakeFiles/gomoku.dir/classes/Ranking.cpp.o
+ /home/piotr/Documents/cpp/gomoku/classes/Ranking.cpp
+ /home/piotr/Documents/cpp/gomoku/headers/Ranking.h
 CMakeFiles/gomoku.dir/main.cpp.o
  /home/piotr/Documents/cpp/gomoku/classes/Gomoku.cpp
  /home/piotr/Documents/cpp/gomoku/classes/Menu.cpp

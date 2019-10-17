@@ -6,6 +6,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/gomoku.dir/classes/Board.cpp.o"
   "CMakeFiles/gomoku.dir/classes/DrawerClassic.cpp.o"
   "CMakeFiles/gomoku.dir/classes/GameLoop.cpp.o"
+  "CMakeFiles/gomoku.dir/classes/Ranking.cpp.o"
+  "CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.o"
+  "CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.o"
   "gomoku.pdb"
   "gomoku"
 )

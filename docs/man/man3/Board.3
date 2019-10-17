@@ -1,0 +1,236 @@
+.TH "Board" 3 "Tue Oct 15 2019" "Version 024" "Gomoku" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Board
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Board\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBmove\fP (std::pair< int, int > position)"
+.br
+.ti -1c
+.RI "void \fBsave\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetField\fP (std::pair< int, int > position)"
+.br
+.ti -1c
+.RI "void \fBrecreate\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetPlayer\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetTotalMoves\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetWinner\fP ()"
+.br
+.ti -1c
+.RI "int \fBisGameEnded\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBlinearise\fP ()"
+.br
+.ti -1c
+.RI "void \fBdelinearise\fP (std::string data)"
+.br
+.ti -1c
+.RI "int \fBfindHorizontal\fP ()"
+.br
+.ti -1c
+.RI "int \fBfindVertical\fP ()"
+.br
+.ti -1c
+.RI "int \fBfindDiagonal\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBboard\fP [15][15]"
+.br
+.ti -1c
+.RI "int \fBwinner\fP"
+.br
+.ti -1c
+.RI "int \fBcurrentPlayer\fP"
+.br
+.ti -1c
+.RI "int \fBmadeMoves\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class represents board on which players are playing\&. It is 15x15 fields size\&. Each player puts its marks on board\&. \fBBoard\fP does not have \fBDrawer\fP service in-built\&. It's implemented in \fBDrawer\fP Class\&. 
+.PP
+Definition at line 16 of file Board\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Board::delinearise (std::string data)\fC [private]\fP"
+Translate game state from string into 2D array -> board 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdata\fP string we like to translate 
+.RE
+.PP
+
+.PP
+Definition at line 69 of file Board\&.cpp\&.
+.SS "int Board::findDiagonal ()\fC [private]\fP"
+Same as previous, but performed in diagonals 
+.PP
+\fBReturns:\fP
+.RS 4
+player number if any player won, or 0 if not 
+.RE
+.PP
+
+.PP
+Definition at line 133 of file Board\&.cpp\&.
+.SS "int Board::findHorizontal ()\fC [private]\fP"
+Check if in any row was 5 the same signs 
+.PP
+\fBReturns:\fP
+.RS 4
+player number if any player won, or 0 if not 
+.RE
+.PP
+
+.PP
+Definition at line 106 of file Board\&.cpp\&.
+.SS "int Board::findVertical ()\fC [private]\fP"
+Same as previous but performed in columns 
+.PP
+\fBReturns:\fP
+.RS 4
+player number if any player won, or 0 if not 
+.RE
+.PP
+
+.PP
+Definition at line 119 of file Board\&.cpp\&.
+.SS "int Board::getField (std::pair< int, int > position)"
+Returns mark on pointed field 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIposition\fP position wich we'd like to check 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+mark as number 
+.RE
+.PP
+
+.PP
+Definition at line 52 of file Board\&.cpp\&.
+.SS "int Board::getPlayer ()"
+Getter for current player 
+.PP
+\fBReturns:\fP
+.RS 4
+current player as number 
+.RE
+.PP
+
+.PP
+Definition at line 77 of file Board\&.cpp\&.
+.SS "int Board::getTotalMoves ()"
+Getter for total number of made moves during this game 
+.PP
+\fBReturns:\fP
+.RS 4
+total number of moves 
+.RE
+.PP
+
+.PP
+Definition at line 81 of file Board\&.cpp\&.
+.SS "int Board::getWinner ()"
+Getter for winner player 
+.PP
+\fBReturns:\fP
+.RS 4
+winner player 
+.RE
+.PP
+
+.PP
+Definition at line 164 of file Board\&.cpp\&.
+.SS "int Board::isGameEnded ()"
+Check if endgame condition is fulfiled 
+.PP
+\fBReturns:\fP
+.RS 4
+player number if any player won, or 0 if not 
+.RE
+.PP
+
+.PP
+Definition at line 85 of file Board\&.cpp\&.
+.SS "std::string Board::linearise ()\fC [private]\fP"
+Function linearise bord into string, which is used to save game progress 
+.PP
+\fBReturns:\fP
+.RS 4
+board as linearised string 
+.RE
+.PP
+
+.PP
+Definition at line 10 of file Board\&.cpp\&.
+.SS "void Board::move (std::pair< int, int > position)"
+Update board with player move\&. Notice players are choosen by function no by caller\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIposition\fP position on which we put mark 
+.RE
+.PP
+
+.PP
+Definition at line 32 of file Board\&.cpp\&.
+.SS "void Board::recreate ()"
+Recreates board state after save 
+.PP
+Definition at line 58 of file Board\&.cpp\&.
+.SS "void Board::save ()"
+Save game state to file -> Game\&.save 
+.PP
+Definition at line 43 of file Board\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int Board::board[15][15]\fC [private]\fP"
+Actual board 
+.PP
+Definition at line 21 of file Board\&.h\&.
+.SS "int Board::currentPlayer\fC [private]\fP"
+Number of player which made move\&. Updated after move was made 
+.PP
+Definition at line 44 of file Board\&.h\&.
+.SS "int Board::madeMoves\fC [private]\fP"
+Number of made moves\&. Updated after move was made 
+.PP
+Definition at line 50 of file Board\&.h\&.
+.SS "int Board::winner\fC [private]\fP"
+Player which won 
+.PP
+Definition at line 26 of file Board\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Gomoku from the source code\&.

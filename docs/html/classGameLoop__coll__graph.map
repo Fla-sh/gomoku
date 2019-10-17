@@ -1,0 +1,4 @@
+<map id="GameLoop" name="GameLoop">
+<area shape="rect" id="node2" href="$classBoard.html" title="{Board\n|&#45; board\l&#45; winner\l&#45; currentPlayer\l&#45; madeMoves\l|+ Board()\l+ move()\l+ save()\l+ getField()\l+ recreate()\l+ getPlayer()\l+ getTotalMoves()\l+ getWinner()\l+ isGameEnded()\l&#45; linearise()\l&#45; delinearise()\l&#45; findHorizontal()\l&#45; findVertical()\l&#45; findDiagonal()\l}" alt="" coords="5,5,133,317"/>
+<area shape="rect" id="node3" href="$classDrawer.html" title="{Drawer\n|&#45; XMark\l&#45; OMark\l&#45; EmptyMark\l|+ draw()\l}" alt="" coords="158,108,255,215"/>
+</map>

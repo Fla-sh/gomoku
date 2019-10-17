@@ -1,0 +1,153 @@
+\hypertarget{classMainMenu}{}\section{Main\+Menu Class Reference}
+\label{classMainMenu}\index{Main\+Menu@{Main\+Menu}}
+
+
+{\ttfamily \#include $<$Main\+Menu.\+h$>$}
+
+
+
+Inheritance diagram for Main\+Menu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classMainMenu__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Main\+Menu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classMainMenu__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMainMenu_a21c41131a13a5149fe5859d1d670e20b}{choose\+Option} () override
+\item 
+void \hyperlink{classMainMenu_adfc425f06cd51c10d78521315ae9abd6}{execute\+Option} () override
+\item 
+\mbox{\Hypertarget{classMainMenu_a8d9cc89fce7c6c8e1ec838d594add0b8}\label{classMainMenu_a8d9cc89fce7c6c8e1ec838d594add0b8}} 
+void {\bfseries is\+Number} (std\+::string text)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMainMenu_a783930d91ab415468d9c631eb61d0a00}{option1} () override
+\item 
+void \hyperlink{classMainMenu_a17f6460d8872b2ca269ebcf6eaa82589}{option2} () override
+\item 
+void \hyperlink{classMainMenu_a97fe096cec584b02614f759d7fcef8d1}{option3} () override
+\item 
+void \hyperlink{classMainMenu_a2097f6d1d30bad0b5c6e28575a48cc3e}{option4} () override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMainMenu_a11e5e68dfcccc2b802d628043fd1694c}\label{classMainMenu_a11e5e68dfcccc2b802d628043fd1694c}} 
+int {\bfseries option}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main \hyperlink{classMenu}{Menu} class. Allows users to choose between\+: starting new game, continue last game, or see rankings 
+
+Definition at line 16 of file Main\+Menu.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMainMenu_a21c41131a13a5149fe5859d1d670e20b}\label{classMainMenu_a21c41131a13a5149fe5859d1d670e20b}} 
+\index{Main\+Menu@{Main\+Menu}!choose\+Option@{choose\+Option}}
+\index{choose\+Option@{choose\+Option}!Main\+Menu@{Main\+Menu}}
+\subsubsection{\texorpdfstring{choose\+Option()}{chooseOption()}}
+{\footnotesize\ttfamily void Main\+Menu\+::choose\+Option (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Displays menu, and collects input 
+
+Implements \hyperlink{classMenu}{Menu}.
+
+
+
+Definition at line 34 of file Main\+Menu.\+cpp.
+
+\mbox{\Hypertarget{classMainMenu_adfc425f06cd51c10d78521315ae9abd6}\label{classMainMenu_adfc425f06cd51c10d78521315ae9abd6}} 
+\index{Main\+Menu@{Main\+Menu}!execute\+Option@{execute\+Option}}
+\index{execute\+Option@{execute\+Option}!Main\+Menu@{Main\+Menu}}
+\subsubsection{\texorpdfstring{execute\+Option()}{executeOption()}}
+{\footnotesize\ttfamily void Main\+Menu\+::execute\+Option (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Execute option chosen by user 
+
+Implements \hyperlink{classMenu}{Menu}.
+
+
+
+Definition at line 67 of file Main\+Menu.\+cpp.
+
+\mbox{\Hypertarget{classMainMenu_a783930d91ab415468d9c631eb61d0a00}\label{classMainMenu_a783930d91ab415468d9c631eb61d0a00}} 
+\index{Main\+Menu@{Main\+Menu}!option1@{option1}}
+\index{option1@{option1}!Main\+Menu@{Main\+Menu}}
+\subsubsection{\texorpdfstring{option1()}{option1()}}
+{\footnotesize\ttfamily void Main\+Menu\+::option1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Here used as New Game option 
+
+Implements \hyperlink{classMenu}{Menu}.
+
+
+
+Definition at line 12 of file Main\+Menu.\+cpp.
+
+\mbox{\Hypertarget{classMainMenu_a17f6460d8872b2ca269ebcf6eaa82589}\label{classMainMenu_a17f6460d8872b2ca269ebcf6eaa82589}} 
+\index{Main\+Menu@{Main\+Menu}!option2@{option2}}
+\index{option2@{option2}!Main\+Menu@{Main\+Menu}}
+\subsubsection{\texorpdfstring{option2()}{option2()}}
+{\footnotesize\ttfamily void Main\+Menu\+::option2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Here used as Continue option 
+
+Implements \hyperlink{classMenu}{Menu}.
+
+
+
+Definition at line 18 of file Main\+Menu.\+cpp.
+
+\mbox{\Hypertarget{classMainMenu_a97fe096cec584b02614f759d7fcef8d1}\label{classMainMenu_a97fe096cec584b02614f759d7fcef8d1}} 
+\index{Main\+Menu@{Main\+Menu}!option3@{option3}}
+\index{option3@{option3}!Main\+Menu@{Main\+Menu}}
+\subsubsection{\texorpdfstring{option3()}{option3()}}
+{\footnotesize\ttfamily void Main\+Menu\+::option3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Here used as See \hyperlink{classRanking}{Ranking} option 
+
+Implements \hyperlink{classMenu}{Menu}.
+
+
+
+Definition at line 24 of file Main\+Menu.\+cpp.
+
+\mbox{\Hypertarget{classMainMenu_a2097f6d1d30bad0b5c6e28575a48cc3e}\label{classMainMenu_a2097f6d1d30bad0b5c6e28575a48cc3e}} 
+\index{Main\+Menu@{Main\+Menu}!option4@{option4}}
+\index{option4@{option4}!Main\+Menu@{Main\+Menu}}
+\subsubsection{\texorpdfstring{option4()}{option4()}}
+{\footnotesize\ttfamily void Main\+Menu\+::option4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Never used here 
+
+Implements \hyperlink{classMenu}{Menu}.
+
+
+
+Definition at line 30 of file Main\+Menu.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/Main\+Menu.\+h\item 
+classes/Main\+Menu.\+cpp\end{DoxyCompactItemize}

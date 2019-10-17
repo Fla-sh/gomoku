@@ -1,0 +1,56 @@
+.TH "DrawerClassic" 3 "Tue Oct 15 2019" "Version 024" "Gomoku" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DrawerClassic
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <DrawerClassic\&.h>\fP
+.PP
+Inherits \fBDrawer\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBdraw\fP (\fBBoard\fP board) override"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "const std::string \fBXMark\fP = 'X'"
+.br
+.ti -1c
+.RI "const std::string \fBOMark\fP = 'O'"
+.br
+.ti -1c
+.RI "const std::string \fBEmptyMark\fP = ' '"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Is implementation of \fBDrawer\fP\&. In this version player1 is X and player2 is O\&. 
+.PP
+Definition at line 15 of file DrawerClassic\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void DrawerClassic::draw (\fBBoard\fP board)\fC [override]\fP, \fC [virtual]\fP"
+Draws \fBBoard\fP on screen 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIboard\fP board which should be drawn 
+.RE
+.PP
+
+.PP
+Implements \fBDrawer\fP\&.
+.PP
+Definition at line 8 of file DrawerClassic\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Gomoku from the source code\&.

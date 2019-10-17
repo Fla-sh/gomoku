@@ -1,0 +1,138 @@
+\hypertarget{classLogger}{}\section{Logger Class Reference}
+\label{classLogger}\index{Logger@{Logger}}
+
+
+{\ttfamily \#include $<$Logger.\+h$>$}
+
+
+
+Collaboration diagram for Logger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classLogger__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{classLogger_a4004f551a3c44ceb479c7c36e4e1dee8}{get\+Prompt} ()
+\item 
+static void \hyperlink{classLogger_a1e920507694b06e8a16120783902e229}{save\+Move} (int x, int y, char symbol)
+\item 
+static void \hyperlink{classLogger_a69ca833f3e3643333d718f0cce464f9b}{purge\+Move\+Log} ()
+\item 
+static void \hyperlink{classLogger_ad2156c976610010c579352c9aeb4b388}{safe\+Event} (std\+::string event)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{classLogger_a756a608050fea9f497dd2736f9321f3b}{now} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::string \hyperlink{classLogger_a80c00c4446e4310cfbf9ed048edbe979}{prompt} = \char`\"{}-\/-\/$>$\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Facility used to save vital information about processing states and events, for after release program care 
+
+Definition at line 16 of file Logger.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLogger_a4004f551a3c44ceb479c7c36e4e1dee8}\label{classLogger_a4004f551a3c44ceb479c7c36e4e1dee8}} 
+\index{Logger@{Logger}!get\+Prompt@{get\+Prompt}}
+\index{get\+Prompt@{get\+Prompt}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{get\+Prompt()}{getPrompt()}}
+{\footnotesize\ttfamily std\+::string Logger\+::get\+Prompt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns setup propmpt symbol \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 50 of file Logger.\+cpp.
+
+\mbox{\Hypertarget{classLogger_a756a608050fea9f497dd2736f9321f3b}\label{classLogger_a756a608050fea9f497dd2736f9321f3b}} 
+\index{Logger@{Logger}!now@{now}}
+\index{now@{now}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{now()}{now()}}
+{\footnotesize\ttfamily std\+::string Logger\+::now (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Current date as U\+TM format \begin{DoxyReturn}{Returns}
+string with date 
+\end{DoxyReturn}
+
+
+Definition at line 45 of file Logger.\+cpp.
+
+\mbox{\Hypertarget{classLogger_a69ca833f3e3643333d718f0cce464f9b}\label{classLogger_a69ca833f3e3643333d718f0cce464f9b}} 
+\index{Logger@{Logger}!purge\+Move\+Log@{purge\+Move\+Log}}
+\index{purge\+Move\+Log@{purge\+Move\+Log}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{purge\+Move\+Log()}{purgeMoveLog()}}
+{\footnotesize\ttfamily void Logger\+::purge\+Move\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Used to purge mvoe log. Used in early versions, now useless \begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000001}{Deprecated}]\end{DoxyRefDesc}
+
+
+Definition at line 30 of file Logger.\+cpp.
+
+\mbox{\Hypertarget{classLogger_ad2156c976610010c579352c9aeb4b388}\label{classLogger_ad2156c976610010c579352c9aeb4b388}} 
+\index{Logger@{Logger}!safe\+Event@{safe\+Event}}
+\index{safe\+Event@{safe\+Event}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{safe\+Event()}{safeEvent()}}
+{\footnotesize\ttfamily void Logger\+::safe\+Event (\begin{DoxyParamCaption}\item[{std\+::string}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Save all events in program to main log -\/$>$ log.\+log.\+log 
+\begin{DoxyParams}{Parameters}
+{\em event} & data to save \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file Logger.\+cpp.
+
+\mbox{\Hypertarget{classLogger_a1e920507694b06e8a16120783902e229}\label{classLogger_a1e920507694b06e8a16120783902e229}} 
+\index{Logger@{Logger}!save\+Move@{save\+Move}}
+\index{save\+Move@{save\+Move}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{save\+Move()}{saveMove()}}
+{\footnotesize\ttfamily void Logger\+::save\+Move (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{char}]{symbol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Save moves which made players to separate log -\/$>$ moves.\+log 
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em symbol} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file Logger.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classLogger_a80c00c4446e4310cfbf9ed048edbe979}\label{classLogger_a80c00c4446e4310cfbf9ed048edbe979}} 
+\index{Logger@{Logger}!prompt@{prompt}}
+\index{prompt@{prompt}!Logger@{Logger}}
+\subsubsection{\texorpdfstring{prompt}{prompt}}
+{\footnotesize\ttfamily const std\+::string Logger\+::prompt = \char`\"{}-\/-\/$>$\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Prompt sign 
+
+Definition at line 50 of file Logger.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/Logger.\+h\item 
+classes/Logger.\+cpp\end{DoxyCompactItemize}
