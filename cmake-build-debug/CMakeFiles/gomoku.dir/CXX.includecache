@@ -6,6 +6,56 @@
 
 #IncludeRegexTransform: 
 
+/home/piotr/Documents/cpp/gomoku/classes/Drawer.cpp
+../headers/Drawer.h
+/home/piotr/Documents/cpp/gomoku/headers/Drawer.h
+
+/home/piotr/Documents/cpp/gomoku/classes/DrawerAlternative.cpp
+iostream
+-
+../headers/DrawerAlternative.h
+/home/piotr/Documents/cpp/gomoku/headers/DrawerAlternative.h
+
+/home/piotr/Documents/cpp/gomoku/classes/DrawerClassic.cpp
+iostream
+-
+../headers/DrawerClassic.h
+/home/piotr/Documents/cpp/gomoku/headers/DrawerClassic.h
+
+/home/piotr/Documents/cpp/gomoku/classes/DrawerMess.cpp
+../headers/DrawerMess.h
+/home/piotr/Documents/cpp/gomoku/headers/DrawerMess.h
+iostream
+-
+../headers/DrawerMess.h
+/home/piotr/Documents/cpp/gomoku/headers/DrawerMess.h
+
+/home/piotr/Documents/cpp/gomoku/classes/GameLoop.cpp
+iostream
+-
+../headers/GameLoop.h
+/home/piotr/Documents/cpp/gomoku/headers/GameLoop.h
+../headers/Board.h
+/home/piotr/Documents/cpp/gomoku/headers/Board.h
+../headers/Drawer.h
+/home/piotr/Documents/cpp/gomoku/headers/Drawer.h
+../headers/DrawerClassic.h
+/home/piotr/Documents/cpp/gomoku/headers/DrawerClassic.h
+../headers/Ranking.h
+/home/piotr/Documents/cpp/gomoku/headers/Ranking.h
+../headers/DrawerAlternative.h
+/home/piotr/Documents/cpp/gomoku/headers/DrawerAlternative.h
+../headers/DrawerMess.h
+/home/piotr/Documents/cpp/gomoku/headers/DrawerMess.h
+
+/home/piotr/Documents/cpp/gomoku/classes/Gomoku.cpp
+../headers/Gomoku.h
+/home/piotr/Documents/cpp/gomoku/headers/Gomoku.h
+../headers/Menu.h
+/home/piotr/Documents/cpp/gomoku/headers/Menu.h
+../headers/MainMenu.h
+/home/piotr/Documents/cpp/gomoku/headers/MainMenu.h
+
 /home/piotr/Documents/cpp/gomoku/classes/MainMenu.cpp
 iostream
 -
@@ -34,7 +84,21 @@ string
 Board.h
 /home/piotr/Documents/cpp/gomoku/headers/Board.h
 
+/home/piotr/Documents/cpp/gomoku/headers/DrawerAlternative.h
+Board.h
+/home/piotr/Documents/cpp/gomoku/headers/Board.h
+Drawer.h
+/home/piotr/Documents/cpp/gomoku/headers/Drawer.h
+
 /home/piotr/Documents/cpp/gomoku/headers/DrawerClassic.h
+Drawer.h
+/home/piotr/Documents/cpp/gomoku/headers/Drawer.h
+
+/home/piotr/Documents/cpp/gomoku/headers/DrawerMess.h
+string
+-
+Board.h
+/home/piotr/Documents/cpp/gomoku/headers/Board.h
 Drawer.h
 /home/piotr/Documents/cpp/gomoku/headers/Drawer.h
 
@@ -45,6 +109,8 @@ Drawer.h
 /home/piotr/Documents/cpp/gomoku/headers/Drawer.h
 DrawerClassic.h
 /home/piotr/Documents/cpp/gomoku/headers/DrawerClassic.h
+
+/home/piotr/Documents/cpp/gomoku/headers/Gomoku.h
 
 /home/piotr/Documents/cpp/gomoku/headers/Logger.h
 string
@@ -65,4 +131,12 @@ vector
 -
 string
 -
+
+/home/piotr/Documents/cpp/gomoku/main.cpp
+iostream
+-
+headers/Gomoku.h
+/home/piotr/Documents/cpp/gomoku/headers/Gomoku.h
+classes/Gomoku.cpp
+/home/piotr/Documents/cpp/gomoku/classes/Gomoku.cpp
 
