@@ -38,13 +38,6 @@ void GameLoop::play() {
             try {
                 std::cout << "Wykonano ruchow: " << GameLoop::board.getTotalMoves() << std::endl;
                 std::cout << "Ruch gracza " << GameLoop::board.getPlayer() << ": ";
-                std::cin >> x;
-                if(x == "stop"){
-                    GameLoop::stillPlaying = false;
-                    GameLoop::board.save();
-                    std::cout << std::endl << std::endl << std::endl << std::endl;
-                    break;
-                }
                 std::cin >> y;
                 if(y == "stop"){
                     GameLoop::stillPlaying = false;
@@ -52,6 +45,15 @@ void GameLoop::play() {
                     std::cout << std::endl << std::endl << std::endl << std::endl;
                     break;
                 }
+
+                std::cin >> x;
+                if(x == "stop"){
+                    GameLoop::stillPlaying = false;
+                    GameLoop::board.save();
+                    std::cout << std::endl << std::endl << std::endl << std::endl;
+                    break;
+                }
+
 
                 std::cout << std::endl << std::endl << std::endl << std::endl;
 

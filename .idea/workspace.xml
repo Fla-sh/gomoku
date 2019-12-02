@@ -12,15 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf2ffd34-41fc-40f2-994a-1d61ba0d48ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.save" beforeDir="false" afterPath="$PROJECT_DIR$/Game.save" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gomoku.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gomoku.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gomoku.dir/classes/DrawerAlternative.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gomoku.dir/classes/DrawerClassic.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gomoku.dir/classes/DrawerClassic.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gomoku.dir/classes/DrawerMess.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gomoku.dir/classes/GameLoop.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gomoku.dir/classes/GameLoop.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gomoku.dir/classes/MainMenu.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gomoku.dir/classes/MainMenu.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/gomoku" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/gomoku" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/GameLoop.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/GameLoop.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.log.log" beforeDir="false" afterPath="$PROJECT_DIR$/log.log.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ranking.r" beforeDir="false" afterPath="$PROJECT_DIR$/ranking.r" afterDir="false" />
     </list>
@@ -36,20 +28,20 @@
     <session id="-386981411">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Doxyfile" value="7" />
-          <entry key="cpp" value="49" />
-          <entry key="h" value="47" />
+          <entry key="cpp" value="50" />
+          <entry key="h" value="49" />
           <entry key="html" value="1" />
           <entry key="log" value="6" />
           <entry key="r" value="1" />
@@ -59,14 +51,14 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="ObjectiveC" value="96" />
+          <entry key="ObjectiveC" value="99" />
           <entry key="PLAIN_TEXT" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Doxyfile" value="169" />
-          <entry key="cpp" value="10695" />
+          <entry key="cpp" value="10698" />
           <entry key="h" value="6395" />
           <entry key="log" value="13" />
           <entry key="r" value="40" />
@@ -75,7 +67,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Doxygen file" value="108" />
-          <entry key="ObjectiveC" value="16982" />
+          <entry key="ObjectiveC" value="16985" />
           <entry key="PLAIN_TEXT" value="222" />
         </counts>
       </usages-collector>
@@ -85,14 +77,23 @@
     <splitter split-orientation="horizontal" split-proportion="0.49326804">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/classes/Board.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2805">
-                  <caret line="165" column="1" selection-start-line="165" selection-start-column="1" selection-end-line="165" selection-end-column="1" />
+                <state relative-caret-position="68">
+                  <caret line="69" column="21" lean-forward="true" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
                   <folding>
                     <element signature="e#40#58#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/headers/DrawerAlternative.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
                 </state>
               </provider>
             </entry>
@@ -104,7 +105,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/headers/Board.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="19">
+                <state relative-caret-position="255">
                   <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
                   <folding>
                     <element signature="e#87#105#0" expanded="true" />
@@ -116,16 +117,30 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/classes/GameLoop.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="600">
-                  <caret line="77" column="15" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="15" />
+                <state relative-caret-position="-160">
+                  <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/classes/Drawer.cpp">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/headers/Drawer.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" selection-start-line="7" selection-end-line="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/classes/Ranking.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="5">
+                <state relative-caret-position="17">
                   <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
                 </state>
               </provider>
@@ -159,7 +174,6 @@
         <option value="$PROJECT_DIR$/classes/DrawerClassic.cpp" />
         <option value="$PROJECT_DIR$/classes/DrawerAlternative.cpp" />
         <option value="$PROJECT_DIR$/classes/DrawerMess.cpp" />
-        <option value="$PROJECT_DIR$/classes/GameLoop.cpp" />
         <option value="$PROJECT_DIR$/headers/DrawerClassic.h" />
         <option value="$PROJECT_DIR$/headers/DrawerAlternative.h" />
         <option value="$PROJECT_DIR$/headers/DrawerMess.h" />
@@ -174,6 +188,7 @@
         <option value="$PROJECT_DIR$/headers/Menu.h" />
         <option value="$PROJECT_DIR$/headers/Drawer.h" />
         <option value="$PROJECT_DIR$/Doxyfile" />
+        <option value="$PROJECT_DIR$/classes/GameLoop.cpp" />
       </list>
     </option>
   </component>
@@ -184,9 +199,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1920" />
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="width" value="1920" />
+    <option name="height" value="1044" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -277,27 +291,29 @@
       <workItem from="1571640375645" duration="29000" />
       <workItem from="1574683585662" duration="177000" />
       <workItem from="1574715207982" duration="289000" />
+      <workItem from="1575273722095" duration="728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35096000" />
+    <option name="totallyTimeSpent" value="35824000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="1680" height="1050" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info x="1039" y="71" width="416" height="790" id="Structure" order="0" side_tool="true" type="FLOATING" weight="0.2496925" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" x="1430" y="109" width="486" height="744" id="Project" order="2" type="WINDOWED" weight="0.2607626" />
+      <window_info active="true" content_ui="combo" x="1434" y="109" width="478" height="740" id="Project" order="2" visible="true" weight="0.16488793" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="0" y="29" width="1920" height="1011" id="Run" order="2" type="WINDOWED" weight="0.32998747" />
+      <window_info anchor="bottom" x="0" y="29" width="1920" height="1015" id="Run" order="2" type="WINDOWED" weight="0.32998747" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" visible="true" weight="0.32896176" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32896176" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32998747" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
@@ -414,13 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/headers/DrawerAlternative.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/headers/DrawerMess.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -428,20 +437,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Drawer.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/headers/Logger.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/headers/Drawer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -508,19 +507,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Board.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2805">
-          <caret line="165" column="1" selection-start-line="165" selection-start-column="1" selection-end-line="165" selection-end-column="1" />
-          <folding>
-            <element signature="e#40#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/headers/Board.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
+        <state relative-caret-position="255">
           <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding>
             <element signature="e#87#105#0" expanded="true" />
@@ -528,17 +517,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/GameLoop.cpp">
+    <entry file="file://$PROJECT_DIR$/classes/Ranking.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="77" column="15" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="15" />
+        <state relative-caret-position="17">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Ranking.cpp">
+    <entry file="file://$PROJECT_DIR$/classes/GameLoop.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        <state relative-caret-position="-160">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Drawer.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/headers/Drawer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Board.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="69" column="21" lean-forward="true" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+          <folding>
+            <element signature="e#40#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/headers/DrawerAlternative.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
         </state>
       </provider>
     </entry>
